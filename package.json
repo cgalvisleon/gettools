@@ -1,0 +1,39 @@
+{
+  "name": "gettools",
+  "version": "1.0.1",
+  "description": "this package includes an functions manager from data json in object and array from getting data, avoiding them null results or undefined",
+  "private": false,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standard",
+    "build": "npx babel src -d lib && cp package.json ./lib/package.json && cp README.md ./lib/README.md"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": []
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgalvisleon/gettools.git"
+  },
+  "keywords": [
+    "gettools"
+  ],
+  "author": "cgalvisleon@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cgalvisleon/gettools/issues"
+  },
+  "homepage": "https://github.com/cgalvisleon/gettools#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "prettier": {
+    "printWidth": 140
+  }
+}
