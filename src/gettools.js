@@ -76,6 +76,19 @@ const getRow = function (list, index, fieldName, _default) {
   }
 };
 
+const getSource = function (source, atribs, _default) {
+  let result = _default;
+  let atrib = {};
+  for (var i = 0; i < atribs.length; i++) {
+    if (i == 0) {
+      result = source;
+    }
+    atrib = atribs[i];
+    result = getValue(result, atrib, _default);
+  }
+  return result;
+};
+
 module.exports = {
   emptyValue,
   getValue,
@@ -84,4 +97,5 @@ module.exports = {
   getArray,
   getItem,
   getRow,
+  getSource,
 };
