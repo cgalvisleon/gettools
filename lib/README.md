@@ -41,3 +41,23 @@ const name = getRow(data, 0, 'lastname', 'Not lastname');
 // Not lastname
 
 ```
+
+## Example getSource
+
+```
+import { getSource } from 'gettools'
+
+const data = {
+  _id: '1',
+  name: {
+    first_name: 'Cesar'
+  }
+}
+
+const name = getSource(data, ['name', 'first_name'], '');
+// Cesar
+
+const name = getSource(data, ['name', 'last_name'], 'Not lastname');
+// Not lastname
+
+```

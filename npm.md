@@ -15,4 +15,4 @@ npm i -D babel-core babel-cli babel-preset-es2015
 
 npm login
 
-npm version 1.0.1 -f && npm run build && npm publish lib
+npm version 1.0.2 -f && npm run build && npm publish lib

@@ -1,6 +1,6 @@
 {
   "name": "gettools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "this package includes an functions manager from data json in object and array from getting data, avoiding them null results or undefined",
   "private": false,
   "main": "index.js",
